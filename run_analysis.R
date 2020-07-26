@@ -105,4 +105,5 @@ summary_data <- split(data, data$activity) %>%
 
 summary_data <- do.call(rbind, summary_data)
 
+write.csv(summary_data, "summary_data.csv")
 
